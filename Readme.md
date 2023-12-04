@@ -10,6 +10,16 @@
 
 <img width="64px" src="images/icon.jpg"></img> Official repository of [VLM-Eval: A General Evaluation on Video Large Language Models](https://arxiv.org/abs/2311.11865).
 
+## VLM-Eval: A General Evaluation on Video Large Language Models 🎯🔍
+
+This project thoroughly assesses Video Large Language Models. Our primary focus revolves around a multitude of tasks – from **video captioning, question answering, and retrieval to action recognition, offering a broad perspective of applicability.
+
+![](images/eval.jpg)
+
+- **GPT-based Evaluation**: Leveraging the power of GPT, we demonstrate reliable and efficient evaluation of open-ended response quality for *[video captioning](#caption-gpt)* and *[video question answering](#qa-gpt)* tasks.
+
+- **Retrieval-based Evaluation**: Retrieval-based evaluation focuses on assessing abilities in downstream applications through *[video-text retrieval](#caption-text-video-retrieval)* and *[action recognition](#action-regonition)*.
+
 ## Recent Papers 📄✨
 
 We welcome additions to the list of papers and models, as well as evaluation results.
@@ -23,7 +33,7 @@ We welcome additions to the list of papers and models, as well as evaluation res
 
 ## Datasets 💾🌐
 
-The following datasets is used in our training.
+The following datasets are used in our training.
 
 | Dataset                                                                                                                                        | Task Domain                             | Scale |
 | :--------------------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------- | :---: |
@@ -46,17 +56,7 @@ Other datasets:
 | Valley-Instruct-73k [link](https://huggingface.co/datasets/luoruipu1/Valley-Instruct-73k)                     | Chat               |  73K  |
 | Kinetics-400 [link](https://github.com/cvdfoundation/kinetics-dataset)                                        | Action recognition | 650K  |
 
-## VLM-Eval: A General Evaluation on Video Large Language Models 🎯🔍
-
-This project thoroughly assesses Video Large Language Models. Our primary focus revolves around a multitude of tasks – from **video captioning, question answering, and retrieval to action recognition, offering a broad perspective of applicability.
-
-![](images/eval.jpg)
-
-- **GPT-based Evaluation**: Leveraging the power of GPT, we demonstrate reliable and efficient evaluation of open-ended response quality for *[video captioning](#caption-gpt)* and *[video question answering](#qa-gpt)* tasks.
-
-- **Retrieval-based Evaluation**: Retrieval-based evaluation focuses on assessing abilities in downstream applications through *[video-text retrieval](#caption-text-video-retrieval)* and *[action recognition](#action-regonition)*.
-
-### Results
+## Results
 
 | Method                                                            | QA<br>Acc | QA<br>Match | Cap<br>Prec | Cap<br>Cov | T2V<br>Acc5 | V2T<br>Acc5 | Act<br>Acc1 | Act<br>Acc5 |
 | ----------------------------------------------------------------- | :-------: | :---------: | :---------: | :--------: | :---------: | :---------: | :---------: | :---------: |
@@ -67,11 +67,11 @@ This project thoroughly assesses Video Large Language Models. Our primary focus 
 | [Video-LLaVA (Lin et al.)](https://github.com/PKU-YuanGroup/Video-LLaVA) |   48.0    |    2.90     |    2.18     |    2.29    |    29.7     |    31.4     |    41.3     |    63.9     |
 | [VideoChat2](https://github.com/OpenGVLab/Ask-Anything)           |   44.6    |    2.80     |    2.29     |    2.42    |    28.9     |    28.7     |    35.6     |    55.4     |
 
-### Getting Started 🚀👨‍💻
+## Getting Started 🚀👨‍💻
 
 Begin your journey with VLM-Eval using these evaluation examples. At the current stage, it is necessary for you to download videos from the original datasets. We also highly recommend that you ask us to test your open-sourced video LLM.
 
-#### Set OpanAI API Key
+### Set OpanAI API Key
 
 The initial step involves setting your OpenAI key in the environment. You can do this by utilizing the command provided below.
 
@@ -79,7 +79,7 @@ The initial step involves setting your OpenAI key in the environment. You can do
 export OPENAI_API_KEY="your api key here"
 ```
 
-#### Caption GPT
+### Caption GPT
 
 The following command provided will guide GPT-3.5 to assess video captions within the MSVD dataset.
 The overall usage comprises approximately 62K prompt tokens and 14K completion tokens. This process will only incur a cost of about $0.09.
@@ -100,7 +100,7 @@ python -m eval_bench.gpt_eval.evaluate_cap_pr_v2 \
     --max_try_times 15
 ```
 
-#### Caption Text-Video Retrieval
+### Caption Text-Video Retrieval
 
 ```bash
 python -m eval_bench.eval_cap_ret \
@@ -110,7 +110,7 @@ python -m eval_bench.eval_cap_ret \
     --clip_model ViT-B/32
 ```
 
-#### Caption CIDEr
+### Caption CIDEr
 
 ```bash
 python -m eval_bench.eval_cap_ret \
@@ -119,7 +119,7 @@ python -m eval_bench.eval_cap_ret \
     --gt /data/data/labels/test/MMGPT_evalformat_MSVD_Caption_test.json
 ```
 
-#### QA GPT
+### QA GPT
 
 You may download the prediction file `msvd_qa_preds_final.json` from [here](https://drive.google.com/file/d/1_Gsg3WvxtADouqwYLXGf9Q2rjw23N1cC/view?usp=sharing). There is no need for a separate ground truth file since the ground truth is already embedded within the prediction file.
 
@@ -135,7 +135,7 @@ python -m eval_bench.gpt_eval.evaluate_qa_msvd \
     --max_try_times 15
 ```
 
-#### Action Regonition
+### Action Recognition
 
 ```bash
 python -m eval_bench.eval_cap_ret \
@@ -147,7 +147,7 @@ python -m eval_bench.eval_cap_ret \
 
 Enjoy exploring and implementing VLM-Eval! 💡👩‍💻🌍
 
-### License 📝🔐
+## License 📝🔐
 
 This project is licensed under the terms of the [MIT License](LICENSE).
 
