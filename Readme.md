@@ -1,4 +1,4 @@
-# Awesome Video Large Language Models 🎥🦙
+# VLM-Eval: A General Evaluation on Video Large Language Models 🎯🔍
 
 [![arXiv](https://img.shields.io/badge/arXiv-2311.11865-COLOR.svg)](https://arxiv.org/abs/2311.11865)
 [![License](https://img.shields.io/badge/License-MIT-yellow)](https://github.com/zyayoung/Awesome-Video-LLMs/blob/main/LICENSE)
@@ -10,9 +10,7 @@
 
 <img width="64px" src="images/icon.jpg"></img> Official repository of [VLM-Eval: A General Evaluation on Video Large Language Models](https://arxiv.org/abs/2311.11865).
 
-## VLM-Eval: A General Evaluation on Video Large Language Models 🎯🔍
-
-This project thoroughly assesses Video Large Language Models. Our primary focus revolves around a multitude of tasks – from **video captioning, question answering, and retrieval to action recognition, offering a broad perspective of applicability.
+This project thoroughly assesses Video Large Language Models.
 
 ![](images/eval.jpg)
 
@@ -20,7 +18,7 @@ This project thoroughly assesses Video Large Language Models. Our primary focus 
 
 - **Retrieval-based Evaluation**: Retrieval-based evaluation focuses on assessing abilities in downstream applications through *[video-text retrieval](#caption-text-video-retrieval)* and *[action recognition](#action-regonition)*.
 
-## Recent Papers 📄✨
+## Awesome Video Large Language Models 🎥🦙
 
 We welcome additions to the list of papers and models, as well as evaluation results.
 
