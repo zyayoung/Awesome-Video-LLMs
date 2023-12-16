@@ -56,14 +56,15 @@ Other datasets:
 
 ## Results
 
-| Method                                                            | QA<br>Acc | QA<br>Match | Cap<br>Prec | Cap<br>Cov | T2V<br>Acc5 | V2T<br>Acc5 | Act<br>Acc1 | Act<br>Acc5 |
-| ----------------------------------------------------------------- | :-------: | :---------: | :---------: | :--------: | :---------: | :---------: | :---------: | :---------: |
-| [Video-LLaMA](https://github.com/DAMO-NLP-SG/Video-LLaMA)         |   32.2    |    2.26     |    1.99     |    2.08    |    23.4     |    23.4     |    28.2     |    47.6     |
-| [VideoChat](https://github.com/OpenGVLab/Ask-Anything)            |   41.6    |    2.63     |    2.02     |    2.16    |    25.8     |    30.3     |    36.0     |    56.8     |
-| [Video-ChatGPT](https://github.com/mbzuai-oryx/Video-ChatGPT)     |   46.2    |    2.84     |    2.49     |    2.65    |    28.2     |  **32.8**   |    40.3     |  **64.5**   |
-| Video-LLaVA (VLM-Eval)                                            | **48.8**  |  **2.98**   |  **2.75**   |  **2.86**  |  **33.5**   |    31.9     |  **43.0**   |    64.3     |
-| [Video-LLaVA (Lin et al.)](https://github.com/PKU-YuanGroup/Video-LLaVA) |   48.0    |    2.90     |    2.18     |    2.29    |    29.7     |    31.4     |    41.3     |    63.9     |
-| [VideoChat2](https://github.com/OpenGVLab/Ask-Anything)           |   44.6    |    2.80     |    2.29     |    2.42    |    28.9     |    28.7     |    35.6     |    55.4     |
+| Method                                                                         | QA<br>Acc | QA<br>Match | Cap<br>Prec | Cap<br>Cov | T2V<br>Acc5 | V2T<br>Acc5 | Act<br>Acc1 | Act<br>Acc5 |
+| ------------------------------------------------------------------------------ | :-------: | :---------: | :---------: | :--------: | :---------: | :---------: | :---------: | :---------: |
+| [Video-LLaMA](https://github.com/DAMO-NLP-SG/Video-LLaMA)                      |   32.2    |    2.26     |    1.99     |    2.08    |    23.4     |    23.4     |    28.2     |    47.6     |
+| [VideoChat](https://github.com/OpenGVLab/Ask-Anything)                         |   41.6    |    2.63     |    2.02     |    2.16    |    25.8     |    30.3     |    36.0     |    56.8     |
+| [Video-ChatGPT](https://github.com/mbzuai-oryx/Video-ChatGPT)                  |   46.2    |    2.84     |    2.49     |    2.65    |    28.2     |  **32.8**   |    40.3     |    64.5     |
+| Video-LLaVA (VLM-Eval)                                                         |   48.8    |  **2.98**   |  **2.75**   |  **2.86**  |  **33.5**   |    31.9     |    43.0     |    64.3     |
+| [Video-LLaVA (Lin et al.)](https://github.com/PKU-YuanGroup/Video-LLaVA)       |   48.0    |    2.90     |    2.18     |    2.29    |    29.7     |    31.4     |    41.3     |    63.9     |
+| [VideoChat2](https://github.com/OpenGVLab/Ask-Anything)                        |   44.6    |    2.80     |    2.29     |    2.42    |    28.9     |    28.7     |    35.6     |    55.4     |
+| [LLaMA-VID](https://huggingface.co/YanweiLi/llama-vid-7b-full-224-video-fps-1) | **50.1**  |    2.97     |    2.18     |    2.25    |    29.4     |    30.1     |  **45.1**   |  **67.4**   |
 
 ## Getting Started 🚀👨‍💻
 
