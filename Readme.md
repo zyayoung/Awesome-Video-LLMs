@@ -1,5 +1,6 @@
 # VLM-Eval: A General Evaluation on Video Large Language Models 🎯🔍
 
+<img width="64px" src="images/icon.jpg"></img>
 [![arXiv](https://img.shields.io/badge/arXiv-2311.11865-COLOR.svg)](https://arxiv.org/abs/2311.11865)
 [![License](https://img.shields.io/badge/License-MIT-yellow)](https://github.com/zyayoung/Awesome-Video-LLMs/blob/main/LICENSE)
 ![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fzyayoung%2FVLM-Eval&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)
@@ -8,15 +9,14 @@
 [![GitHub closed issues](https://badgen.net/github/closed-issues/zyayoung/Awesome-Video-LLMs)](https://github.com/zyayoung/Awesome-Video-LLMs/issues?q=is%3Aissue+is%3Aclosed)
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
-<img width="64px" src="images/icon.jpg"></img> Official repository of [VLM-Eval: A General Evaluation on Video Large Language Models](https://arxiv.org/abs/2311.11865).
-
-This project thoroughly assesses Video Large Language Models.
+Welcome to the official repository of [VLM-Eval: A General Evaluation on Video Large Language Models](https://arxiv.org/abs/2311.11865), the go-to source for a comprehensive evaluation of Video Large Language Models. Immerse yourself in this pioneering project that sets a new standard in the video AI domain.
 
 ![](images/eval.jpg)
 
-- **GPT-based Evaluation**: Leveraging the power of GPT, we demonstrate reliable and efficient evaluation of open-ended response quality for *[video captioning](#caption-gpt)* and *[video question answering](#qa-gpt)* tasks.
+## What Sets VLM-Eval Apart?
+Discover how VLM-Eval leverages the power of human-verified GPT-based and retrieval-based evaluation, covering tasks from video captioning to action recognition.
 
-- **Retrieval-based Evaluation**: Retrieval-based evaluation focuses on assessing abilities in downstream applications through *[video-text retrieval](#caption-text-video-retrieval)* and *[action recognition](#action-regonition)*.
+The framework distinguishes itself with its dual evaluation approach. The GPT-based evaluation harnesses the capabilities of Generative Pre-trained Transformers to analyze and interpret video captions, ensuring reliable and efficient assessment through human-verified prompts. On the other hand, the retrieval-based evaluation focuses on the practical application of these models in real-world scenarios, emphasizing their utility in downstream applications.
 
 ## Awesome Video Large Language Models 🎥🦙
 
@@ -56,6 +56,8 @@ Other datasets:
 
 ## Results
 
+Dive into our detailed benchmarking results, showcasing the capabilities of different video language models and setting new standards in the field.
+
 | Method                                                                         | QA<br>Acc | QA<br>Match | Cap<br>Prec | Cap<br>Cov | T2V<br>Acc5 | V2T<br>Acc5 | Act<br>Acc1 | Act<br>Acc5 |
 | ------------------------------------------------------------------------------ | :-------: | :---------: | :---------: | :--------: | :---------: | :---------: | :---------: | :---------: |
 | [Video-LLaMA](https://github.com/DAMO-NLP-SG/Video-LLaMA)                      |   32.2    |    2.26     |    1.99     |    2.08    |    23.4     |    23.4     |    28.2     |    47.6     |
@@ -66,13 +68,13 @@ Other datasets:
 | [VideoChat2](https://github.com/OpenGVLab/Ask-Anything)                        |   44.6    |    2.80     |    2.29     |    2.42    |    28.9     |    28.7     |    35.6     |    55.4     |
 | [LLaMA-VID](https://huggingface.co/YanweiLi/llama-vid-7b-full-224-video-fps-1) | **50.1**  |    2.97     |    2.18     |    2.25    |    29.4     |    30.1     |  **45.1**   |  **67.4**   |
 
-## Getting Started 🚀👨‍💻
+## Get Started with VLM-Eval: Your Journey Begins Here 🚀👨‍💻
 
-Begin your journey with VLM-Eval using these evaluation examples. At the current stage, it is necessary for you to download videos from the original datasets. We also highly recommend that you ask us to test your open-sourced video LLM.
+For those eager to explore VLM-Eval, this section provides a comprehensive guide to get started. It includes instructions on setting up the environment, along with examples and tutorials to help users effectively utilize the framework for their research. At the current stage, you must download videos from the original datasets. We also highly recommend that you request us to test your open-source video LLM.
 
 ### Set OpanAI API Key
 
-The initial step involves setting your OpenAI key in the environment. You can do this by utilizing the command provided below.
+The initial step involves setting your OpenAI key in the environment. You can do this by the command below.
 
 ```bash
 export OPENAI_API_KEY="your api key here"
@@ -150,7 +152,9 @@ Enjoy exploring and implementing VLM-Eval! 💡👩‍💻🌍
 
 This project is licensed under the terms of the [MIT License](LICENSE).
 
-## Credit 🎓🤝
+## Join the Awesome Video Large Language Models Community 🎓🤝
+
+VLM-Eval encourages active community participation. Researchers and developers are invited to contribute their papers, models, and evaluation results, fostering a collaborative environment. This section also highlights significant contributions from the community, showcasing a diverse range of insights and advancements in the field.
 
 Contributions from the following sources have shaped this project:
 
@@ -162,7 +166,7 @@ Contributions from the following sources have shaped this project:
 
 ## Citing VLM-Eval 📚🖋
 
-If the VLM-Eval framework proves valuable to your research, please consider acknowledging it with the provided citation, and don't forget to give it a star!
+If VLM-Eval enhances your research, we appreciate your acknowledgment. Find citation details here, and don't forget to star our repository!
 
 ```bibtex
 @article{li2023vlm,
